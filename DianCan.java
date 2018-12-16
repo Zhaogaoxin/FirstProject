@@ -13,37 +13,37 @@ public class DianCan {
 //			double[] sumPrice = new double[4];
 	
 	    public static Scanner sc = new Scanner(System.in);
-	    public static String[] name = new String[4];// ĞÕÃû
-	    public static int[] time = new int[4];// ËÍ²ÍÊ±¼ä
-	    public static String[] addess = new String[4];// ËÍ²ÍµØÖ·
-	    public static String[] orderMsg = new String[4];// ËÍ²ÍÄÚÈİ
-	    public static double[] orderPrices = new double[4];// ¶©²ÍµÄ×Ü¼Û
-	    public static String[] dishNames = { "ÍòÈıÖâ×Ó", "·ğÌøÇ½", "ĞÂ½®¿¾È«Ñò" };// ²Ëµ¥
-	    public static int[] price = { 88, 880, 812 };// ²Ë¼Û
-	    public static int[] prize = { 12, 34, 812 };// µãÔŞÊı
-	    public static int[] status = new int[4];// ¶©µ¥×´Ì¬
+	    public static String[] name = new String[4];// å§“å
+	    public static int[] time = new int[4];// é€é¤æ—¶é—´
+	    public static String[] addess = new String[4];// é€é¤åœ°å€
+	    public static String[] orderMsg = new String[4];// é€é¤å†…å®¹
+	    public static double[] orderPrices = new double[4];// è®¢é¤çš„æ€»ä»·
+	    public static String[] dishNames = { "è’œè“‰é»„ç“œ", "é»„ç„–é¸¡é¥­", "è”¬èœæ—¶é²œ" };// èœå•
+	    public static int[] price = { 88, 880, 812 };// èœä»·
+	    public static int[] prize = { 12, 34, 812 };// ç‚¹èµæ•°
+	    public static int[] status = new int[4];// è®¢å•çŠ¶æ€
 	    public static void main(String[] args) {
-	        name[0] = "ÕÅ·É";
-	        orderMsg[0] = "ÍòÈıÖâ×ÓÒ»·İ";
+	        name[0] = "å¼ é£";
+	        orderMsg[0] = "ä¸‡ä¸‰è‚˜å­ä¸€ä»½";
 	        time[0] = 11;
-	        addess[0] = "¹¤´ó";
+	        addess[0] = "å·¥å¤§";
 	        orderPrices[0] = 88;
 	        status[0] = 0;
-	        name[1] = "ÕÅÈı";
-	        orderMsg[1] = "·ğÌøÇ½Ò»·İ";
+	        name[1] = "å¼ ä¸‰";
+	        orderMsg[1] = "ä½›è·³å¢™ä¸€ä»½";
 	        time[1] = 12;
-	        addess[1] = "±±´óÇàÄñ";
+	        addess[1] = "åŒ—å¤§é’é¸Ÿ";
 	        price[1] = 880;
 	        status[1] = 0;
-	        System.out.println("***»¶Ó­Ê¹ÓÃ³Ô»õÁªÃËÏµÍ³***");
+	        System.out.println("***æ¬¢è¿ä½¿ç”¨åƒè´§è”ç›Ÿç³»ç»Ÿ***");
 	        to: do {
 	            System.out.println("*************************************");
-	            System.out.println("\t1:ÎÒÒª¶©²Í");
-	            System.out.println("\t2:²é¿´²Í´ü");
-	            System.out.println("\t3:Ç©ÊÕ¶©µ¥");
-	            System.out.println("\t4:É¾³ı¶©µ¥");
-	            System.out.println("\t5:ÎÒÒªµãÔŞ");
-	            System.out.println("\t6:ÍË³öÏµÍ³");
+	            System.out.println("\t1:æˆ‘è¦è®¢é¤");
+	            System.out.println("\t2:æŸ¥çœ‹é¤è¢‹");
+	            System.out.println("\t3:ç­¾æ”¶è®¢å•");
+	            System.out.println("\t4:åˆ é™¤è®¢å•");
+	            System.out.println("\t5:æˆ‘è¦ç‚¹èµ");
+	            System.out.println("\t6:é€€å‡ºç³»ç»Ÿ");
 	            System.out.println("*************************************");
 	            int num = inputIntNum(1, 6);
 	            switch (num) {
@@ -68,12 +68,12 @@ public class DianCan {
 	                break;
 	            }
 	            case 6: {
-	                System.out.println("ÍË³öÏµÍ³");
+	                System.out.println("é€€å‡ºç³»ç»Ÿ");
 	                break to;
 	            }
 	            }
 	        } while (true);
-	        System.out.println("»¶Ó­ÏÂ´Î¹âÁÙ");
+	        System.out.println("æ¬¢è¿ä¸‹æ¬¡å…‰ä¸´");
 	    }
 	    public static boolean function1() {
 	        boolean isFull = false;
@@ -86,34 +86,34 @@ public class DianCan {
 	                }
 	            }
 	            if (!isFull) {
-	                System.out.println("²Í´üÒÑÂú");
+	                System.out.println("é¤è¢‹å·²æ»¡");
 	                return isFull;
 	            }
-	            System.out.println("ÎÒÒª¶©²Í");
-	            System.out.println("*********²ËÆ·ĞÅÏ¢**********");
-	            System.out.println("ĞòºÅ\tÃû³Æ\t¼Û¸ñ\tµãÔŞ");
+	            System.out.println("æˆ‘è¦è®¢é¤");
+	            System.out.println("*********èœå“ä¿¡æ¯**********");
+	            System.out.println("åºå·\tåç§°\tä»·æ ¼\tç‚¹èµ");
 	            for (int i = 0; i < dishNames.length; i++) {
 	                System.out.println((i + 1) + "\t" + dishNames[i] + "\t" + price[i] + "\t" + prize[i]);
 	            }
 	            System.out.println("**************");
 	            int index = inputIntNum(1, 3);
 	            int dishNum = inputIntNum(1, 5);
-	            String msg = dishNames[index - 1] + "," + dishNum + "·İ";
-	            System.out.println("ÊäÈë¶©²ÍÈËĞÕÃû:");
+	            String msg = dishNames[index - 1] + "," + dishNum + "ä»½";
+	            System.out.println("è¾“å…¥è®¢é¤äººå§“å:");
 	            String orderName = sc.next();
-	            System.out.println("ÊäÈë¶©²ÍµØÖ·:");
+	            System.out.println("è¾“å…¥è®¢é¤åœ°å€:");
 	            String orderAdd = sc.next();
-	            System.out.println("ÊäÈëËÍ²ÍµØÖ·:");
+	            System.out.println("è¾“å…¥é€é¤åœ°å€:");
 	            int orderTime = sc.nextInt();
 	            double rate = (price[index - 1] * dishNum > 50) ? 0 : 5;
 	            double orderPrice = price[index - 1] * dishNum + rate;
-	            System.out.println("¶©²ÍĞÅÏ¢¾ßÌåÈçÏÂ:");
-	            System.out.println("¶©²ÍÈË:+orderName");
-	            System.out.println("¶©²ÍÄÚÈİ:" + msg);
-	            System.out.println("¶©²Í×Ü¼Û:" + orderPrice);
-	            System.out.println("ËÍ²Í·ÑÓÃ:" + rate);
-	            System.out.println("ËÍ²ÍÊ±¼ä:" + time);
-	            System.out.println("ËÍ²ÍµØÖ·:" + orderAdd);
+	            System.out.println("è®¢é¤ä¿¡æ¯å…·ä½“å¦‚ä¸‹:");
+	            System.out.println("è®¢é¤äºº:+orderName");
+	            System.out.println("è®¢é¤å†…å®¹:" + msg);
+	            System.out.println("è®¢é¤æ€»ä»·:" + orderPrice);
+	            System.out.println("é€é¤è´¹ç”¨:" + rate);
+	            System.out.println("é€é¤æ—¶é—´:" + time);
+	            System.out.println("é€é¤åœ°å€:" + orderAdd);
 	            for (int i = 0; i < name.length; i++) {
 	                if (name[i] == null) {
 	                    name[i] = orderName;
@@ -121,11 +121,11 @@ public class DianCan {
 	                    orderMsg[i] = msg;
 	                    addess[i] = orderAdd;
 	                    orderPrices[i] = orderPrice;
-	                    System.out.println("¶©²Í³É¹¦!");
+	                    System.out.println("è®¢é¤æˆåŠŸ!");
 	                    break;
 	                }
 	            }
-	            System.out.println("ÊÇ·ñ¼ÌĞø¶©²Í(y/n):");
+	            System.out.println("æ˜¯å¦ç»§ç»­è®¢é¤(y/n):");
 	            String ans = sc.next();
 	            if (!ans.equals("y")) {
 	                break;
@@ -139,16 +139,16 @@ public class DianCan {
 	    public static int inputIntNum(int start, int end) {
 	        int index = -1;
 	        do {
-	            System.out.println("ÇëÑ¡Ôñ²Ëµ¥ĞòºÅ:");
+	            System.out.println("è¯·é€‰æ‹©èœå•åºå·:");
 	            while (!sc.hasNext()) {
-	                System.out.println("ÊäÈëÕûÊı");
+	                System.out.println("è¾“å…¥æ•´æ•°");
 	                String sd = sc.next();
 	            }
 	            index = sc.nextInt();
 	            if (index <= end && index >= start) {
 	                break;
 	            } else {
-	                System.out.println("Ñ¡Ïî±ØĞëÔÚ" + start + "-" + end + "Ö®¼ä");
+	                System.out.println("é€‰é¡¹å¿…é¡»åœ¨" + start + "-" + end + "ä¹‹é—´");
 	            }
 	        } while (true);
 	        return index;
@@ -156,29 +156,29 @@ public class DianCan {
 	    public static int inputIntNum1(int start, int end) {
 	        int index = -1;
 	        do {
-	            System.out.println("ÊäÈë¹ºÂò¼¸·İ:");
+	            System.out.println("è¾“å…¥è´­ä¹°å‡ ä»½:");
 	            while (!sc.hasNext()) {
-	                System.out.println("ÊäÈëÕûÊı:");
+	                System.out.println("è¾“å…¥æ•´æ•°:");
 	                String sd = sc.next();
 	            }
 	            index = sc.nextInt();
 	            if (index <= end && index >= start) {
 	                break;
 	            } else {
-	                System.out.println("Ñ¡Ïî±ØĞëÔÚ" + start + "-" + end + "Ö®¼ä");
+	                System.out.println("é€‰é¡¹å¿…é¡»åœ¨" + start + "-" + end + "ä¹‹é—´");
 	            }
 	        } while (true);
 	        return index;
 	    }
 	    public static void function2() {
-	        System.out.println("ĞòºÅ\tĞÕÃû\t¶©²ÍÄÚÈİ\t\t×Ü¼Û\tËÍ²ÍÊ±¼ä\tËÍ²ÍµØÖ·\tËÍ²Í×´Ì¬");
+	        System.out.println("åºå·\tå§“å\tè®¢é¤å†…å®¹\t\tæ€»ä»·\té€é¤æ—¶é—´\té€é¤åœ°å€\té€é¤çŠ¶æ€");
 	        for (int i = 0; i < name.length; i++) {
 	            if (name[i] != null) {
 	                String st = "";
 	                if (status[i] == 0) {
-	                    st = "Î´Ç©ÊÕ";
+	                    st = "æœªç­¾æ”¶";
 	                } else {
-	                    st = "ÒÑÇ©ÊÕ";
+	                    st = "å·²ç­¾æ”¶";
 	                }
 	                System.out.println((i + 1) + "\t");
 	                System.out.println(name[i] + "\t");
@@ -190,7 +190,7 @@ public class DianCan {
 	        }
 	    }
 	    public static void function3() {
-	        // ÅĞ¶Ï¶©µ¥ºÅµÄ·¶Î§1-n
+	        // åˆ¤æ–­è®¢å•å·çš„èŒƒå›´1-n
 	        int end = 0;
 	        for (String s : name) {
 	            if (s != null) {
@@ -199,19 +199,19 @@ public class DianCan {
 	        }
 	        int start = 1;
 	        if (end == 0) {
-	            System.out.println("Ã»ÓĞ¶©µ¥¿ÉÇ©ÊÕ");
+	            System.out.println("æ²¡æœ‰è®¢å•å¯ç­¾æ”¶");
 	            return;
 	        }
 	        System.out.println(start + "==>" + end);
 	        int index = inputIntNum(1, end);
 	        for (int i = 0; i < name.length; i++) {
 	            if (name[i] != null && index == (i + 1) && status[i] == 1) {
-	                System.out.println("´Ë¶©µ¥ÒÑÇ©ÊÕ");
+	                System.out.println("æ­¤è®¢å•å·²ç­¾æ”¶");
 	                continue;
 	            }
 	            if (name[i] != null && index == (i + 1) && status[i] == 0) {
 	                status[i] = 1;
-	                System.out.println("¶©µ¥Ç©ÊÕ³É¹¦");
+	                System.out.println("è®¢å•ç­¾æ”¶æˆåŠŸ");
 	                break;
 	            }
 	        }
@@ -225,7 +225,7 @@ public class DianCan {
 	        }
 	        int start = 1;
 	        if (end == 0) {
-	            System.out.println("Ã»ÓĞ¶©µ¥¿ÉÉ¾³ı");
+	            System.out.println("æ²¡æœ‰è®¢å•å¯åˆ é™¤");
 	            return;
 	        }
 	        System.out.println(start + "==>" + end);
@@ -233,7 +233,7 @@ public class DianCan {
 	        boolean isFind = false;
 	        for (int i = 0; i < name.length; i++) {
 	            if (name[i] != null && index == (i + 1) && status[i] == 0) {
-	                System.out.println("´ËÑ¡ÏîÃ»Ç©ÊÕ£¬²»¿ÉÉ¾³ı");
+	                System.out.println("æ­¤é€‰é¡¹æ²¡ç­¾æ”¶ï¼Œä¸å¯åˆ é™¤");
 	                continue;
 	            }
 	            if (name[i] != null && index == (i + 1) && status[i] == 1) {
@@ -256,19 +256,19 @@ public class DianCan {
 	            orderMsg[orderMsg.length - 1] = null;
 	            orderPrices[orderPrices.length - 1] = 0;
 	            status[status.length - 1] = 0;
-	            System.out.println("É¾³ı³É¹¦");
+	            System.out.println("åˆ é™¤æˆåŠŸ");
 	        }
 	    }
 	    private static void function5() {
-	        System.out.println("*********µãÔŞ²ËÆ·ĞÅÏ¢************");
-	        System.out.println("ĞòºÅ\tÃû³Æ\t¼Û¸ñ\tµãÔŞ");
+	        System.out.println("*********ç‚¹èµèœå“ä¿¡æ¯************");
+	        System.out.println("åºå·\tåç§°\tä»·æ ¼\tç‚¹èµ");
 	        for (int i = 0; i < dishNames.length; i++) {
 	            System.out.println((i + 1) + "\t" + dishNames[i] + "\t" + price[i] + "\t" + prize[i]);
 	        }
 	        System.out.println("************************************");
 	        int index = inputIntNum(1, dishNames.length);
 	        prize[index - 1]++;
-	        System.out.println("µãÔŞ³É¹¦");
+	        System.out.println("ç‚¹èµæˆåŠŸ");
 	    
 	 
 			}
